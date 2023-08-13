@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel = "stylesheet" href="todolist.css">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+</head>
+<body>
+<div id = "todo_main">
+    <!--Top of the webpage: Title and input box-->
+    <header>
+        <h1>To Do List</h1>
+        <input id = "todo_inputBox" type = "text" placeholder="Please enter a new To Do Item">
+    </header>
+
+    <!--The actual To Do Items-->
+    <section id = "todo_section" style="display: block">
+        <br>
+        <input id = "todo_selectAll" type = "checkbox">
+        <label for = "todo_selectAll">Select all</label>
+        <ul id = "todo_list"></ul>
+    </section>
+
+    <!--The bottom of the webpage: List count and remove button-->
+    <footer style="display: block">
+        <div class = "Todo_count"> You have <b>0</b> items left</div>
+    </footer>
+</div>
+
+<!--Script 1: items (Backbone.js)-->
+<script type="text/template" id="script_itemCount">
+    <div class="view">
+        <input class="toggle" type="checkbox" <%= done ? 'checked="checked"' : '' %> />
+        <label><%- title %></label>
+        <a class="destroy"></a>
+    </div>
+    <input class="edit" type="text" value="<%- title %>" />
+</script>
+
+<!--Script 2: keep track of item count (Backbone.js)-->
+<script type="text/template" id="script_itemRemove">
+    <% if (done) { %>
+    <a id="itemRemove">Clear <%= done %> completed <%= done == 1 ? 'item' : 'items' %></a>
+    <% } %>
+    <div class=Todo_count">You have <b><%= remaining %></b> <%= remaining == 1 ? 'item' : 'items' %> left</div>
+</script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+body {
+    font-size: medium;
+    background: #F1EDEC;
+    color: #292522;
+    width: 520px;
+    margin: 0 auto;
+}
+
+#todo_main {
+    background: #efd9b4;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+#todo_main h1 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+#todo_main input[type = 'text'] {
+    width: 95%;
+    font-size: medium;
+    line-height: 1.4em;
+    padding: 6px;
+}
+
+#todo_section {
+    display: none;
+}
+
+#todo_list {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    display: inline-block;
+    inline-size: 95%;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+#todo_list li {
+    padding: 18px 20px 18px 0;
+    position: relative;
+    font-size: large;
+    border-bottom: #a39081;
+}
+
+#todo_list li:last-child {
+    border-bottom: none;
+}
+
+#todo_list li.done label {
+    color: #4d6160;
+    text-decoration: line-through;
+}
+
+/*pay attention here!*/
+#todo_list li .edit {
+    display: none;
+}
+
+#todo_list li.editing .view{
+    display: none;
+}
+
+#todo_list li.editing .edit{
+    display: block;
+    width: 95%;
+    padding: 13px 15px 14px 20px;
+    margin: 0;
+}
+
+#todo_list li.done label {
+    color: #4d6160;
+    text-decoration: line-through;
+}
+
+#todo_list .destroy {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    display: none;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+#todo_main footer {
+    display: none;
+    margin: 0 -20px -20px -20px;
+    overflow: hidden;
+    color: #292522;
+    background: #d6a692;
+    border-top: 1px solid #F1EDEC;
+    padding: 0 20px;
+    line-height: 37px;
+}
+
+#itemRemove {
+    float: right;
+    line-height: 20px;
+    text-decoration: none;
+    background: rgba(0,0,0,0.1);
+}
