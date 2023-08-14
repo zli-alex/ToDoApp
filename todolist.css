@@ -34,7 +34,7 @@ body {
 }
 
 #todo_main input[type="text"] {
-    width: 85%;
+    width: 90%;
     font-size: x-large;
     line-height: 1.4em;
     padding: 6px;
@@ -152,10 +152,32 @@ input[type="checkbox"] {
 }
 
 #submitButton {
+    display: none;
     height: 30px;
     width: 30px;
     border: 1px solid rgba(058, 027, 025, 0.8);
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     cursor: pointer;
+}
+
+#finalNotes {
+    font-size: small;
+    color: rgb(180,180,180);
+}
+
+a:link {
+    color: rgb(150,150,150) !important;
+}
+
+a:visited {
+    color: rgb(150,150,150) !important;
+}
+
+a:active {
+    color: rgb(150,150,150) !important;
+}
+
+a:hover {
+    color: rgb(100,100, 100) !important;
 }
