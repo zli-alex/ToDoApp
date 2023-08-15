@@ -44,7 +44,7 @@ body {
     outline: none;
     background: rgba(255, 255, 255, 0.2);
     color: rgba(058, 027, 025, 0.8);
-    margin-left: 22px;
+    margin-left: 40px;
 }
 
 #todo_section {
@@ -93,6 +93,11 @@ input[type="checkbox"] {
 
 #todo_list li.done label {
     text-decoration: line-through;
+    color: rgba(150, 052, 096, 0.9);
+}
+
+#todo_list li.done input[type="checkbox"] {
+    accent-color: rgba(150, 052, 096, 0.9);
 }
 
 /*pay attention here!*/
@@ -104,11 +109,20 @@ input[type="checkbox"] {
     display: none;
 }
 
+#todo_list li.Editing{
+    padding: 10px 15px 11px 0;
+}
+
 #todo_list li.Editing .Edit{
+    font-family: Optima, sans-serif;
     display: block;
     width: 95%;
-    padding: 13px 15px 14px 20px;
+    padding: 5px 5px 5px 29px;
     margin: 0;
+}
+
+#todo_list li.Editing .Edit{
+    color: rgba(150, 052, 096, 0.9);
 }
 
 #todo_list .RemoveFromView {
@@ -139,8 +153,8 @@ input[type="checkbox"] {
     float: right;
     line-height: 20px;
     text-decoration: none;
-    background: rgba(0, 0, 0, 0.1);
-    color: rgba(072, 076, 035, 1);
+    background: rgba(150, 052, 096, 0.1);
+    color: rgba(150, 052, 096, 0.9);
     margin-top: 8px;
     margin-bottom: 8px;
     padding: 0 10px 1px;
