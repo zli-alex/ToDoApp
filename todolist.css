@@ -121,7 +121,7 @@ input[type="checkbox"] {
     margin: 0;
 }
 
-#todo_list li.Editing .Edit{
+#todo_list li.done .Edit{
     color: rgba(150, 052, 096, 0.9);
 }
 
